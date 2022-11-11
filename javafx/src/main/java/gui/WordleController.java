@@ -13,20 +13,12 @@ import javafx.scene.text.Font;
 import java.util.HashMap;
 
 public class WordleController{
-    /*
-    Not the prettiest thing, but it was very hard to get FXML to do what we wanted, and everytime I tried to
-    implement something that would make the code nicer FXML just didn't work, so we had to settle with this
-    very large class. We did our best to make this big class as nice looking as possible though.
-    If we had more time, we could probably make it a lot nicer with actual modules and such.
-    Sorry :(
-     */
+
 
     @FXML
     private Label errorMessage, playAgainMessage;
     @FXML
     private TextField input;
-    @FXML
-    private Rectangle background;
     @FXML // Grid Labels
     private Label L01, L02, L03, L04, L05, L06, L07, L08, L09, L10, L11, L12, L13, L14, L15,
             L16, L17, L18, L19, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30;

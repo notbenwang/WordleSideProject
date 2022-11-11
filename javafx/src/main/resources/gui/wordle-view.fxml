@@ -449,7 +449,7 @@
       </Group>
       <Button fx:id="nobutton" layoutX="568.0" layoutY="294.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="No" />
       <Button fx:id="yesbutton" layoutX="786.0" layoutY="294.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Yes" />
-      <Label layoutX="643.0" layoutY="91.0" prefHeight="75.0" prefWidth="143.0" text="Wordle" textAlignment="CENTER" textFill="WHITE">
+      <Label layoutX="652.0" layoutY="91.0" prefHeight="75.0" prefWidth="125.0" text="Wordle" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="41.0" />
          </font>
@@ -459,6 +459,6 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="giveUpButton" layoutX="893.0" layoutY="30.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Give Up?" />
+      <Button fx:id="giveUpButton" layoutX="676.0" layoutY="187.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Give Up?" />
    </children>
 </AnchorPane>
