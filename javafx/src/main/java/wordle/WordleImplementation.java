@@ -84,6 +84,11 @@ public class WordleImplementation implements Wordle {
         return getGuessResult(guess);
     }
 
+    @Override
+    public void setGameStatus(GameStatus status) {
+        this.gameStatus = status;
+    }
+
     private void verifyGameStateAndGuess(String guess) {
         if (isGameOver()) {
             throw new GameAlreadyOverException("Error: Game is already over!");
@@ -108,7 +113,7 @@ public class WordleImplementation implements Wordle {
         return guessResult.getGuessResult();
     }
 
-    protected enum GameStatus {
+    public enum GameStatus {
         PLAYING, WON, LOST;
     }
 

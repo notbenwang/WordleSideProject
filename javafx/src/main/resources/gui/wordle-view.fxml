@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="1000.0" minHeight="706.0" minWidth="-Infinity" prefHeight="706.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.WordleController">
+<AnchorPane maxHeight="700.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.WordleController">
    <children>
       <Rectangle fx:id="background" arcHeight="5.0" arcWidth="5.0" fill="#545454" height="706.0" stroke="BLACK" strokeType="INSIDE" width="1001.0" />
       <Label fx:id="recalibrate" alignment="CENTER" layoutX="513.0" layoutY="154.0" prefHeight="25.0" prefWidth="403.0" text="If text is not working, click here to recalibrate." textFill="#c6c6c6">
@@ -459,5 +459,6 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <Button fx:id="giveUpButton" layoutX="893.0" layoutY="30.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Give Up?" />
    </children>
 </AnchorPane>

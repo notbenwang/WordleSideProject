@@ -3,9 +3,7 @@ import wordle.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
@@ -40,7 +38,7 @@ public class WordleController{
             BoxJ,BoxK,BoxL,BoxM,BoxN,BoxO,BoxP,BoxQ,BoxR,BoxS,BoxT,
             BoxU, BoxV, BoxW, BoxX, BoxY, BoxZ, BoxENTER, BoxDEL;
     @FXML
-    private Button nobutton, yesbutton; // "End Buttons"
+    private Button nobutton, yesbutton, giveUpButton; // "End Buttons"
 
     private final int WORD_LENGTH = 5;
 
@@ -94,6 +92,10 @@ public class WordleController{
             if (event.getSource().equals(nobutton)) {System.exit(1);}
             if (event.getSource().equals(yesbutton)) {
                 initialize();}
+            if (event.getSource().equals(giveUpButton)&& !wordle.isGameOver()){
+                wordle.setGameStatus(WordleImplementation.GameStatus.LOST);
+                checkGameState();
+            }
         }
     }
 
@@ -106,6 +108,7 @@ public class WordleController{
     private void setUpEndButtons(){
         nobutton.setOnAction(new ActionHandler());
         yesbutton.setOnAction(new ActionHandler());
+        giveUpButton.setOnAction(new ActionHandler());
         setEndButtonVisibility(false);
     }
     private void setUpGraphics(){

@@ -12,4 +12,5 @@ public interface Wordle {
     int getRemainingGuesses();
     String getAnswer();
     LetterResult[] submitGuess(String guess);
+    void setGameStatus(WordleImplementation.GameStatus status);
 }
